@@ -1,0 +1,20 @@
+{
+  "name": "romaji2kana-api",
+  "version": "1.0.0",
+  "description": "The Romaji2Kana API provides bi-directional Romaji to Hirgana or Katakana conversion functionality and some more utilities",
+  "main": "index.js",
+  "type": "module",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "wanakana": "^5.1.0"
+  }
+}
