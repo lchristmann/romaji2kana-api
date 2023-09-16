@@ -4,17 +4,16 @@
   "description": "The Romaji2Kana API provides bi-directional Romaji to Hirgana or Katakana conversion functionality and some more utilities",
   "main": "index.js",
   "type": "module",
-  "directories": {
-    "doc": "docs"
-  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "zip": "powershell -Command \"Compress-Archive -Path * -DestinationPath romaji2kana-api.zip\"",
+    "upload": "aws lambda update-function-code --function-name romaji2kana-api --zip-file fileb://romaji2kana-api.zip",
+    "clean": "powershell -Command \"Remove-Item -Path romaji2kana-api.zip\"",
+    "deploy": "npm run zip && npm run upload && npm run clean"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["romaji", "kana", "hiragana", "katakana", "converter"],
+  "author": "Leander Christmann",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.2",
     "wanakana": "^5.1.0"
   }
 }
