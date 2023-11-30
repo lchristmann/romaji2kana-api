@@ -247,7 +247,7 @@ Sentence for Romaji<->Kana: Hajimemashite. REANDA-san desu. Yoroshiku onegai shi
 
 ## 5. API Documentation
 
-The API documentation is published on the Romaji2Kana website on the [API page](https://romaji2kana.com/api.html).
+The API documentation is published on the Romaji2Kana website on the [API page](https://romaji2kana.com/api).
 
 <br>
 
