@@ -38,7 +38,7 @@ For testing the API the `Postman` API Platform is used, which can be [installed]
 
 ### 1.2. Dependencies
 
-The dependencies are managed via the `npm` package manager, that comes with Node.js. They can be installed by running the command `npm install`.
+The dependencies are managed via the `npm` package manager, that comes with Node.js. They can be installed by running the command `npm install`. And listed via `npm list`.
 
 - [wanakana@5.1.0](https://github.com/WaniKani/WanaKana): a JavaScript library for detecting and transliterating Hiragana, Katakana and Romaji in all directions
 
@@ -47,6 +47,14 @@ On top of that, *the local development version* of the API (lying in this `main`
 > See [3. Code Structure](#3-code-structure) for a comparison between the local development and the deployed Cloud version (`main` vs. `release` branch).
 
 - [express@4.18.2](https://github.com/expressjs/express): a fast, unopinionated, minimalist web framework for Node.js
+
+Keep the dependencies up to date:
+
+- run `npm outdated`. This will check every installed dependency and compare the current version with the latest version in the npm registry and print results in a nice table.
+- check the changeslogs of the respective dependencies for breaking changes
+- run `npm update` to update the
+
+To update to a new major version (which often has breaking changes), you need to run `npm install <package>@latest` manually. See [How to Update NPM Dependencies](https://www.freecodecamp.org/news/how-to-update-npm-dependencies/) by [freecodecamp.org](https://www.freecodecamp.org/).
 
 <br>
 
@@ -58,7 +66,7 @@ For the local development version in `main` branch:
 
 1. Install all the dependencies with `npm install`.
 2. Serve the app with `node .` (takes default entrypoint `index.js`) or `node index.js`.
-
+3. Test it by running requests against it, e.g. http://localhost:3000/v1/is/japanese?q=わたし should return `{"result":true}`
 
 For the cloud deployment version in `release` branch:
 
@@ -240,7 +248,7 @@ There is an extensive test suite for the API `api.romaji2kana.com` with 180+ tes
 
 Sentence for Romaji<->Kana: Hajimemashite. REANDA-san desu. Yoroshiku onegai shimasu.
 
-> Attention with `is/{japanese, kana, hiragana, katakana}`: Japanese don't use spaces at all!! (For the conversion functions spaces in Japanese are supported and translate over to Romaji spaces)
+> Attention with `is/{japanese, kana, hiragana, katakana}`: Japanese don't use spaces at all!! (For the conversion functions spaces in Japanese are supported and translate over to Romaji spaces)<br>
 > Attention with `is/{kana, hiragana, katakana}`: no sentence marks allowed!!
 
 <br>
