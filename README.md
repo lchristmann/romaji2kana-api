@@ -76,14 +76,12 @@ For the cloud deployment version in `release` branch:
 
 ### 1.4. Deployment
 
-> Execute the following commands in the working directory of the project, in the `release` branch.
+> To deploy the production version, switch to the `release` branch.
 
-To deploy the API to the cloud into production:
+Deploy the API to the cloud into production:
 
-1. Run the npm script "zip" (defined in the `package.json` of that branch) to build a ZIP: `npm run zip`
-2. Upload the Lambda function
-   - either manually: in the Lambda AWS Management Console > Code > Upload from > .zip file
-   - or automatically: run `npm run deploy` (npm script using the AWS CLI)
+- automatically: run `npm run deploy` (to understand see `script` section of `package.json`)
+- manually: make a ZIP file of the whole working directory and upload it as code to the Lambda function `romaji2kana-api` via the AWS Management Console
 
 > **Important:** from here we can only change behaviour of the Lambda function. If we'd like to change major things about the API, like adding or removing endpoints, we'd have to go to API Gateway Management Console and edit it there! Mind the whole infrastructure, see [2. Cloud Infrastructure](#2-cloud-infrastructure).
 
