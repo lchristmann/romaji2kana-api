@@ -52,7 +52,7 @@ Keep the dependencies up to date:
 
 - run `npm outdated`. This will check every installed dependency and compare the current version with the latest version in the npm registry and print results in a nice table.
 - check the changeslogs of the respective dependencies for breaking changes
-- run `npm update` to update the
+- run `npm update`
 
 To update to a new major version (which often has breaking changes), you need to run `npm install <package>@latest` manually. See [How to Update NPM Dependencies](https://www.freecodecamp.org/news/how-to-update-npm-dependencies/) by [freecodecamp.org](https://www.freecodecamp.org/).
 
