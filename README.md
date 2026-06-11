@@ -30,7 +30,7 @@
 
 ### 1.1. Installations
 
-The Romaji2Kana API project only requires Javascript Runtime `Node.js 18 (LTS)` to be installed. On my local computer I use [Node v18.12.1](https://nodejs.org/de/blog/release/v18.12.0) and on AWS the Runtime *Node.js 18.x* is selected.
+The Romaji2Kana API project only requires Javascript Runtime `Node.js 22 (LTS)` to be installed. On my local computer I use [Node v22.22.3](https://nodejs.org/en/blog/release/v22.22.3) and on AWS the Runtime *Node.js 22.x* is selected.
 
 For testing the API the `Postman` API Platform is used, which can be [installed](https://www.postman.com/downloads/) (recommended) or used in the web version.
 
@@ -40,13 +40,13 @@ For testing the API the `Postman` API Platform is used, which can be [installed]
 
 The dependencies are managed via the `npm` package manager, that comes with Node.js. They can be installed by running the command `npm install`. And listed via `npm list`.
 
-- [wanakana@5.1.0](https://github.com/WaniKani/WanaKana): a JavaScript library for detecting and transliterating Hiragana, Katakana and Romaji in all directions
+- [wanakana@5.3.1](https://github.com/WaniKani/WanaKana): a JavaScript library for detecting and transliterating Hiragana, Katakana and Romaji in all directions
 
 On top of that, *the local development version* of the API (lying in this `main` branch) additionally has a server framework installed to serve the API.
 
 > See [3. Code Structure](#3-code-structure) for a comparison between the local development and the deployed Cloud version (`main` vs. `release` branch).
 
-- [express@4.18.2](https://github.com/expressjs/express): a fast, unopinionated, minimalist web framework for Node.js
+- [express@5.2.1](https://github.com/expressjs/express): a fast, unopinionated, minimalist web framework for Node.js
 
 Keep the dependencies up to date:
 

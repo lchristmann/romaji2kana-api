@@ -14,7 +14,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.2",
-    "wanakana": "^5.1.0"
+    "express": "^5.2.1",
+    "wanakana": "^5.3.1"
   }
 }
